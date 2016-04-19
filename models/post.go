@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 	"github.com/astaxie/beego/orm"
-	"github.com/lisijie/goblog/util"
+	"github.com/cxwshawn/goblog/util"
 	"strings"
 	"time"
 )

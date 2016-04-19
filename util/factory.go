@@ -2,7 +2,7 @@ package util
 
 import (
 	"errors"
-	"github.com/lisijie/goblog/util/singleton"
+	"github.com/cxwshawn/goblog/util/singleton"
 	"sync"
 )
 
