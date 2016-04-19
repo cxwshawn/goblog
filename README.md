@@ -17,12 +17,12 @@
 
 获取源代码，下载完成后会自动编译为goblog可执行文件
 	
-	$ go get github.com/lisijie/goblog
+	$ go get github.com/cxwshawn/goblog
 
 修改数据库配置
 	
 	$ cd src
-	$ vim github.com/lisijie/goblog/conf/app.conf
+	$ vim github.com/cxwshawn/goblog/conf/app.conf
 	
 	appname = goblog
 	httpport = 8080
@@ -38,6 +38,10 @@
 
 	$ mysql -u username -p -D goblog < goblog.sql
 
+拷贝目录
+	cp -R ../src/github.com/cxwshawn/goblog/conf ./
+	cp -R ../src/github.com/cxwshawn/goblog/views ./
+	cp -R ../src/github.com/cxwshawn/goblog/static ./ 
 运行
 	
 	$ ./goblog
