@@ -4,6 +4,7 @@ import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	_ "github.com/go-sql-driver/mysql"
+	"fmt"
 )
 
 func Init() {
@@ -17,6 +18,8 @@ func Init() {
 	}
 	dsn := dbuser + ":" + dbpassword + "@tcp(" + dbhost + ":" + dbport + ")/" + dbname + "?charset=utf8&loc=Asia%2FShanghai"
 	orm.RegisterDataBase("default", "mysql", dsn)
+	fmt.Printf("%s, %s \n", dbhost, dbname)
+
 	orm.RegisterModel(new(User), new(Post), new(Tag), new(TagPost), new(Option))
 }
 
