@@ -31,7 +31,7 @@ func (this *MainController) Index() {
 	query := new(models.Post).Query().Filter("status", 0).Filter("urltype", 0)
 	count, _ := query.Count()
 	if count > 0 {
-		query.OrderBy("-istop", "-posttime").Limit(pagesize, (page-1)*pagesize).All(&list)
+		query.OrderBy("-is_top", "-post_time").Limit(pagesize, (page-1)*pagesize).All(&list)
 	}
 
 	this.Data["count"] = count
