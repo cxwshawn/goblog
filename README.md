@@ -39,7 +39,8 @@
 	$ mysql -u username -p -D goblog < goblog.sql
 
 拷贝目录
-
+	
+	cd $GOPATH/bin
     cp -R ../src/github.com/cxwshawn/goblog/conf ./
     cp -R ../src/github.com/cxwshawn/goblog/views ./
     cp -R ../src/github.com/cxwshawn/goblog/static ./ 
